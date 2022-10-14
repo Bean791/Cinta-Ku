@@ -10,5 +10,25 @@
 .isi{
     text-align: center;
     background-color: rgba(254, 254, 254, 0.289);
-    margin: 40px 50px 40px 50px;
+    margin: 20% 50px 40px 50px;
+    
+}
+#isian{
+    font-size: 30px;
+}
+a{
+    background-color: silver;
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px 5px 10px;
+    border-radius: 30px;
+    text-align: center;
+}
+#ketolak{
+    position: absolute;
+    left:688px; 
+    top:380px; 
+    width:210px; 
+    height:210px;
+    
 }
