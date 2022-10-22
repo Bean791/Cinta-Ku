@@ -27,7 +27,3 @@ var gagal1=document.getElementById('gagal1')
             gagal1.classList.add('hilang')
         })
     }
-// backsound
-var audio = document.getElementById("audio");
-audio.volume = 0.2;
-audio.play();
