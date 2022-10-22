@@ -16,13 +16,16 @@
 #isian{
     font-size: 30px;
 }
-a{
+button{
     background-color: silver;
     text-decoration: none;
     color: black;
     padding: 5px 10px 5px 10px;
     border-radius: 30px;
     text-align: center;
+}
+.hilang{
+    display: none;
 }
 /* #ketolak{
     position: absolute;

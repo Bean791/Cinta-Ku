@@ -1,26 +1,33 @@
-fl=1
-var pilihan=document.getElementById('ketolak')
-function f1()
-{
-alert("Makasih yaaa... Semoga hubungan kita bisa harmonis... :) ")}
-function f(){
-if(fl==1)
-{
-alert('berhasil')
-pilihan.style.marginTop=90
-pilihan.style.marginLeft=500
-fl=2
-}
-else if(fl==2)
-{
-pilihan.style.top=90
-pilihan.style.left=50
-fl=3
-}
-else if(fl==3)
-{
-pilihan.style.top=235
-pilihan.style.left=360
-fl=1
-}
-}
+var setuju=document.getElementById('setuju')
+var setuju1=document.getElementById('setuju1')
+    if (setuju) {
+        setuju.addEventListener('click', function(){
+            alert('Terima Kasih, Karena Kamu Membuatku Bahagia')
+        })
+    }
+var gagal=document.getElementById('gagal')
+var gagal1=document.getElementById('gagal1')
+    if(gagal){
+        gagal.addEventListener('click', function(){
+            setuju.classList.add('hilang')
+            gagal.classList.add('hilang')
+            setuju1.classList.remove('hilang')
+            gagal1.classList.remove('hilang')
+        })}
+    if(setuju1){
+        setuju1.addEventListener('click', function(){
+            alert('Terima Kasih, Karena Kamu Membuatku Bahagia')
+        })
+    }
+    if(gagal1){
+        gagal1.addEventListener('click', function(){
+            setuju.classList.remove('hilang')
+            gagal.classList.remove('hilang')
+            setuju1.classList.add('hilang')
+            gagal1.classList.add('hilang')
+        })
+    }
+// backsound
+var audio = document.getElementById("audio");
+audio.volume = 0.2;
+audio.play();

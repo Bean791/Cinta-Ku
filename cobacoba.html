@@ -8,23 +8,14 @@
     <div class="isi">
         <h1>Khusus Untuk Mu</h1>
         <p id="isian"></p>
-        <!-- <p>Sejak pertama mengenalmu, hatiku terasa bergetar...</p>
-        <p>Tapi rasa ini tak pernah sampai kepadamu dengan nyali dan lisan yang kupunya</p>
-        <p>Sebenarnya, hati tak pernah bohong untuk memungkiri semua yang terjadi</p>
-        <p>Mungkin, dengan ini aku bisa menyatakan rasa yang telah lama ku pendam jauh di lubuk hati </p>
-        <p>Sekarang adalah waktu yang tepat untuk kusampaikan...</p>
-        <p> "Coba arahkan mouse ke kotak di bawah ini pelan-pelan dan jawab pertanyaan dengan jujur" </p>
-        <h2>MAUKAH KAMU MENJADI KEKASIH HATIKU ?????</h2> -->
-        <!-- <div>
-            <input type="button" value=" IYA " onClick="f1()" />
-        </div>
-        <div id="ketolak">
-            <input name="button" type="button" onMouseOver="f()" value=" TIDAK " />
-        </div> -->
-        <a href="#">Iya</a>
-        <a href="#">Tidak</a>
+        <button id="setuju" >Iya</button>
+        <button id="gagal">Tidak</button>
+        <button id="gagal1" class="hilang">Tidak</button>
+        <button id="setuju1"class="hilang">Iya</button>
+        
     </div>
-
+    <!-- backsound -->
+    <audio id="audio" src="sound.mp3" autoplay loop></audio>
     <!-- Animasi -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/TextPlugin.min.js"></script>
@@ -42,34 +33,7 @@
         gsap.to("#isian", {duration: 3, text: "", delay: 59});
         gsap.to("#isian", {duration: 7, text: "Coba arahkan mouse ke kotak di bawah ini pelan-pelan dan jawab pertanyaan dengan jujur", delay: 62});
     </script>
-    <!-- <script src="testing.js"></script> -->
-    <script>
-    let gagal=1
-var pilihan=document.getElementById('ketolak')
-function f1()
-{
-alert("Makasih yaaa... Semoga hubungan kita bisa harmonis... :) ")}
-function f(){
-if(gagal==1)
-{
-alert(gagal)
-
-gagal=gagal+1
-}
-else if(gagal==2)
-{
-pilihan.style.top=90
-pilihan.style.left=50
-gagal=gagal+1
-}
-else if(gagal==3)
-{
-pilihan.style.top=235
-pilihan.style.left=360
-gagal=gagal+1
-}
-}
-    </script>
+    <script src="testing.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </body>
 </html>
