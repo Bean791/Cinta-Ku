@@ -27,3 +27,7 @@ var gagal1=document.getElementById('gagal1')
             gagal1.classList.add('hilang')
         })
     }
+// autoplay
+var audio = document.getElementById("suara");
+audio.play();
+

@@ -9,16 +9,18 @@
     <!-- <audio autoplay>
         <source src="suara.mp3" type="audio/mpeg"/>
     </audio> -->
-    <audio autoplay>
+    <audio id="suara" autoplay>
         <source src="suara.mp3" type="audio/mp3">
     </audio> 
     <div class="isi">
         <h1>Khusus Untuk Mu</h1>
         <p id="isian"></p>
-        <button id="setuju" >Iya</button>
-        <button id="gagal">Tidak</button>
-        <button id="gagal1" class="hilang">Tidak</button>
-        <button id="setuju1"class="hilang">Iya</button>
+        <div class= "pilih">
+            <button id="setuju" >Iya</button>
+            <button id="gagal">Tidak</button>
+            <button id="gagal1" class="hilang">Tidak</button>
+            <button id="setuju1"class="hilang">Iya</button>
+        </div>
         
     </div>
 
@@ -38,6 +40,9 @@
         gsap.to("#isian", {duration: 7, text: "Sekarang adalah waktu yang tepat untuk kusampaikan...", delay: 51});
         gsap.to("#isian", {duration: 3, text: "", delay: 59});
         gsap.to("#isian", {duration: 7, text: "Coba arahkan mouse ke kotak di bawah ini pelan-pelan dan jawab pertanyaan dengan jujur", delay: 62});
+        gsap.to("#isian", {duration: 3, text: "", delay: 69});
+        var pilih = document.getElementsByClassName("pilih");
+        
     </script>
     <script src="testing.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
