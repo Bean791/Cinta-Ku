@@ -4,14 +4,14 @@
     <title>Cinta Ku</title>
     <link rel="stylesheet" href="coba.css">
 </head>
-<body class="bg">
+<body  id="bg">
     <audio id="suara" autoplay>
         <source src="suara.mp3" type="audio/mp3">
     </audio> 
     <div class="isi">
         <h1>Khusus Untuk Mu</h1>
         <p id="isian"></p>
-        <div class= "pilih">
+        <div class= "hilang" id="pilihan">
             <button id="setuju" >Iya</button>
             <button id="gagal">Tidak</button>
             <button id="gagal1" class="hilang">Tidak</button>
@@ -37,7 +37,7 @@
         gsap.to("#isian", {duration: 3, text: "", delay: 59});
         gsap.to("#isian", {duration: 7, text: "Coba arahkan mouse ke kotak di bawah ini pelan-pelan dan jawab pertanyaan dengan jujur", delay: 62});
         gsap.to("#isian", {duration: 3, text: "", delay: 69});
-        var pilih = document.getElementsByClassName("pilih");
+        // var pilih = document.getElementsByClassName("pilih");
         
     </script>
     <script src="testing.js"></script>

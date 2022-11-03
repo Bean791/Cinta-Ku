@@ -36,3 +36,7 @@ var tinggi = window.innerHeight
 // background image berdasarkna lebar layar
 bg.style.backgroundImage = "url('https://source.unsplash.com/"+lebar+"x"+tinggi+"?rose')";
 
+// delay 69 detik baru munculkan tombol
+setTimeout(function(){
+    document.getElementById('pilihan').classList.remove('hilang')
+}, 69000)
