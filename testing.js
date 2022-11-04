@@ -41,5 +41,3 @@ setTimeout(function(){
     document.getElementById('pilihan').classList.remove('hilang')
 }, 69000)
 
-var audio = document.getElementById('audio')
-audio.play()
