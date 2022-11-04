@@ -40,3 +40,6 @@ bg.style.backgroundImage = "url('https://source.unsplash.com/"+lebar+"x"+tinggi+
 setTimeout(function(){
     document.getElementById('pilihan').classList.remove('hilang')
 }, 69000)
+
+var audio = document.getElementById('audio')
+audio.play()
